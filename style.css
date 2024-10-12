@@ -104,6 +104,7 @@ header{
     padding-right: 25px;
     background-color: #3d51f2;
     border-radius: 5px;
+    color: var(--white);
     border: 1px solid white;
     font-family: 'Poppins', sans-serif;
     width: 150px;

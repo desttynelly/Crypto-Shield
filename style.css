@@ -131,11 +131,22 @@ header{
         align-items: center;
         margin-right: 5%;
     }
+    .nav li{
+        font-size: 13px;
+        width: 60px;
+        float: left;
+    }
     .nav-link{
           margin-right: 2em;
     }
     .navLogo,#barContainer,.sociallinkContainer{
         display: none;
+    }
+}
+
+@media screen  and (min-width: 1000px){
+    .nav li{
+        font-size: 15px;
     }
 }
 

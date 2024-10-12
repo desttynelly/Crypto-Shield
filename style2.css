@@ -1353,7 +1353,22 @@ body{
     }    .comm img{
         margin-left: 380px;
     }
+    #bar{
+        display: none;
+    }
+    .nav-l{
+        position: relative;
+        margin-left: 450px;
+        background: none;
+        width: 300px;
+        height: 50px;
+    }
+    .nav-l .logo .show,
+    .sociallink{
+        display: none;
+    }
 }
+
 
 
 
@@ -1386,6 +1401,10 @@ body{
     .comm img{
         margin-left: 420px;
     }
+
+    .nav-l{
+        margin-left: 500px;
+    }
 }
 
 
@@ -1416,6 +1435,10 @@ body{
     }
     .signup{
         margin-left: 200px;
+    }
+
+    .nav-l{
+        margin-left: 550px;
     }
 }
 
@@ -1452,6 +1475,10 @@ body{
 
     .comm img{
         margin-left: 470px;
+    }
+
+    .nav-l{
+        margin-left: 600px;
     }
 }
 
@@ -1492,6 +1519,10 @@ body{
     .comm img{
         margin-left: 490px;
     }
+
+    .nav-l{
+        margin-left: 600px;
+    }
 }
 
 
@@ -1531,6 +1562,10 @@ body{
 
     .comm img{
         margin-left: 510px;
+    }
+
+    .nav-l{
+        margin-left: 650px;
     }
 }
 
@@ -1607,6 +1642,9 @@ body{
     .comm img{
         margin-left: 510px;
     }
+    .nav-l{
+        margin-left: 700px;
+    }
 }
 
 
@@ -1682,6 +1720,9 @@ body{
     .comm img{
         margin-left: 550px;
     }
+    .nav-l{
+        margin-left: 750px;
+    }
 }
 
 
@@ -1717,6 +1758,9 @@ body{
 
     .comm img{
         margin-left: 610px;
+    }
+    .nav-l{
+        margin-left: 800px;
     }
 }
 
@@ -1756,6 +1800,10 @@ body{
     .comm img{
         margin-left: 650px;
     }
+
+    .nav-l{
+        margin-left: 850px;
+    }
 }
 
 
@@ -1793,6 +1841,11 @@ body{
     .comm img{
         margin-left: 710px;
     }
+
+
+    .nav-l{
+        margin-left: 900px;
+    }
 }
 
 
@@ -1826,5 +1879,9 @@ body{
     }
     .comm img{
         margin-left: 770px;
+    }
+
+    .nav-l{
+        margin-left: 950px;
     }
 }

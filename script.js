@@ -13,6 +13,10 @@ bar.onclick = (e) => {
     nav.classList.toggle("showNav")
 }
 
+document.getElementById("close").addEventListener("click", function(){
+    nav.classList.toggle("showNav")
+})
+
 
 // carousel
 const carouselContainer = document.querySelector(".carouselContainer");
@@ -33,3 +37,9 @@ const slideCarousel = (index) => {
    carouselContainer.scrollLeft = (index * (eachCarousel + 10))
    console.log(carouselContainer.scrollLeft)
 }
+
+
+
+document.querySelector(".signupp").addEventListener("click", function(){
+    window.location = "signup.html"
+})

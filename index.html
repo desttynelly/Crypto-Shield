@@ -18,6 +18,11 @@
             </a>
         </div>
         <ul class="nav" id="nav">
+
+            <div">
+            <i id="close" class="fa fa-close"></i>
+        </div>
+
             <ul class="navLogo">
                 <a href="./index.html">
                     <p class="log">Destty Nelly</p>
@@ -27,11 +32,16 @@
             <li class="nav-link"><a href="./index.html">Home</a></li>
             <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
             <li class="nav-link"><a href="./contact.html">Contact</a></li>
+
+            <button class="signupp">Signup</button>
+
             <li class="sociallinkContainer">
                 <img class="sociallink" src="./assets/fabook-icon-white.svg" alt="">
                 <img class="sociallink" src="./assets/twitter-icon-white.svg" alt="">
                 <img class="sociallink" src="./assets/inkedin-icon-white.svg" alt="">
                 <img class="sociallink" src="./assets/whatsapp-icon-white.svg" alt="">
+
+              
             </li>
         </ul>
         <div id="barContainer">
@@ -400,7 +410,11 @@
         </div>
     </footer>
     
-
+    <script>
+        document.querySelector(".signupp").addEventListener("click", function(){
+    window.location = "signup.html"
+})
+</script>
     <script src="./script.js"></script>
 </body>
 </html>

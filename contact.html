@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Web</title>
-    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="commonStyle.css">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
@@ -26,6 +26,9 @@
             <li class="nav-link"><a href="./index.html">Home</a></li>
             <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
             <li class="nav-link"><a href="./contact.html">Contact</a></li>
+
+            <button class="signupp">Signup</button>
+
             <li class="sociallinkContainer">
                 <img class="sociallink" src="./assets/fabook-icon-white.svg" alt="">
                 <img class="sociallink" src="./assets/twitter-icon-white.svg" alt="">
@@ -135,6 +138,12 @@
              <p>&copy; 2023 design and developed by <a href="#" class="developedBy">Programming Insider</a>.</p>
         </div>
     </footer>
+
+    <script>
+        document.querySelector(".signupp").addEventListener("click", function(){
+    window.location = "signup.html"
+})
+</script>
 
     <script src="./script.js"></script>    
 </body>

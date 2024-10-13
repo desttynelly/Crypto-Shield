@@ -486,6 +486,7 @@ input{
     padding: .7em 1.5em;
     width: 100%;
     border: none;
+    color: var(--white);
     outline: none;
     background-color: transparent;
 }

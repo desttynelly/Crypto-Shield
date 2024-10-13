@@ -79,6 +79,11 @@ header{
 
 }
 
+textarea,
+input{
+    font-family: "poppins", sans-serif;
+}
+
 .navLogo{
    margin-bottom: 3rem;
 }
@@ -634,6 +639,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    font-family: "poppins", sans-serif;
 }
 
 .contactInput{

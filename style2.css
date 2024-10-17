@@ -651,7 +651,7 @@ body{
 .signup #arrow{
     width: 15px;
     margin-left: -0px;
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgb(255, 255, 255);
     padding: 3px;
     border-radius: 20px;
     transform: translateY(-90px);

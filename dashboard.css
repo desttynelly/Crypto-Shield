@@ -12,7 +12,9 @@
  }
  
 
-
+body.active{
+    background-color: red;
+}
 
 
 
@@ -282,7 +284,56 @@
     }
 
     .all .front .five-depo-coren{
-        margin-left: 12%;
+        margin-left: 5%;
+    }
+
+    .all .front .five-depo-coren div{
+        float: left;
+        width: 150px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        height: 80px;
+        margin-right: 2%;
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: var(--shadow);
+    }
+    .all .front .five-depo-coren div img{
+        width: 30px;
+        margin-left: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px -5px;
+        background-color: var(--lightgrey);
+    }
+
+    .all .front .five-depo-coren div #main-a{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 50px;
+        margin-top: -30px;
+        /* width: 90px;
+        height: 25px; */
+        overflow: hidden;
+    }
+    .all .front .five-depo-coren div #main-a span{
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .all .front .five-depo-coren div #add{
+        margin-left: 50px;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--primarycolor);
+    }
+
+    .all .front .five-depo-coren div section{
+        background-color: var(--lightgrey);
+        margin-left: 50px;
+        margin-top: 0px;
+        width: 50%;
+        height: 25px;
     }
 
     .all .front .next-div1{
@@ -308,6 +359,16 @@
     }
 }
 
+@media (min-width: 250px){
+
+    .all .front .top-nav .ham{
+        margin-top: -250px;
+        margin-left: 80%;
+    }
+    .all .front .five-depo-coren{
+        margin-left: 16%;
+    }
+}
 
 @media (min-width: 315px){
 
@@ -316,35 +377,115 @@
         margin-left: 80%;
     }
     .all .front .five-depo-coren{
-        margin-left: 14%;
+        margin-left: 23%;
     }
 }
 
 @media (min-width: 340px){
 
     .all .front .five-depo-coren{
-        margin-left: 16%;
+        margin-left: 26%;
+    }
+}
+
+@media (min-width: 360px){
+
+    .all .front .five-depo-coren{
+        margin-left: 3%;
+    }
+    .all .front .five-depo-coren div{
+        float: left;
+        width: 145px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        height: 80px;
+        margin-right: 2%;
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: var(--shadow);
     }
 }
 
 @media (min-width: 400px){
 
     .all .front .five-depo-coren{
-        margin-left: 25%;
+        margin-left: 1%;
+    }
+    .all .front .five-depo-coren div{
+        margin-right: 2%;
+        width: 160px;
+    }
+    .all .front .five-depo-coren div img{
+        width: 40px;
+    }
+    .all .front .five-depo-coren div #main-a{
+        margin-left: 60px;
+        margin-top: -40px;
+    }
+    .all .front .five-depo-coren div #add{
+        margin-left: 60px;
+    }
+    .all .front .five-depo-coren div section{
+        width: 60%;
     }
 }
 
 @media (min-width: 497px){
 
     .all .front .five-depo-coren{
-        margin-left: 2%;
+        margin-left: 10%;
+    }
+    .all .front .five-depo-coren div{
+        margin-right: 30px;
     }
 }
 
 @media (min-width: 500px){
 
     .all .front .five-depo-coren{
-        margin-left: 5%;
+        margin-left: 2%;
+    }
+    .all .front .five-depo-coren div{
+        float: left;
+        width: 200px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        height: 70px;
+        margin-right: 2%;
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: var(--shadow);
+    }
+    .all .front .five-depo-coren div img{
+        width: 50px;
+        margin-left: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px -5px;
+        background-color: var(--lightgrey);
+    }
+    .all .front .five-depo-coren div #main-a{
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 70px;
+        margin-top: -50px;
+    }
+    .all .front .five-depo-coren div #main-a span{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .all .front .five-depo-coren div #add{
+        margin-left: 70px;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--primarycolor);
+    }
+    .all .front .five-depo-coren div section{
+        background-color: var(--lightgrey);
+        margin-left: 130px;
+        margin-top: -19px;
+        width: 30%;
+        height: 25px;
     }
 }
 
@@ -366,6 +507,18 @@
         /* margin-left: -500px; */
         transform: translateY(-150px);
         margin-left: 75%;
+    }
+
+    .all .front .five-depo-coren div{
+        float: left;
+        width: 200px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        height: 70px;
+        margin-right: 2%;
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: var(--shadow);
     }
 
     .all .front .next-div1{

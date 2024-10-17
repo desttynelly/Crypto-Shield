@@ -438,8 +438,10 @@ body{
         transform: translateY(0px);
     }
 }
-
-/* .signup .go2,
+.signup .go2{
+    position: relative;
+}
+/* 
 .signup .go3{
     transform: translateY(-5px);
     margin-left: 25px

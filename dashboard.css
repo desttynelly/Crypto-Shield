@@ -9,6 +9,7 @@
     --lightDark:#080A25;
     --darkText:#8388B4;
     --shadow: 1px 1px 50px -25px;
+    --dark-mode: #0c0e25;
  }
  
  
@@ -21,7 +22,7 @@ body.active{
 
 
     .all .front.active{
-        background-color: #0c0e25;
+        background-color: var(--dark-mode);
     }
     .all .front .top-nav.active{
         color: var(--white);
@@ -59,6 +60,8 @@ body.active{
 
 
 
+
+
 .all{
     padding-left: 5%;
     padding-top: 5%;
@@ -72,8 +75,8 @@ body.active{
     background-color: var(--lightgrey);  
     padding-left: 2%;
     padding-top: 20px; 
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
+    overflow-x: hidden;
+    /* transition: all 0.4s ease-in-out; */
 }
 
 .all .front .top-nav {
@@ -113,16 +116,18 @@ body.active{
     padding-right: 35px;
 }
 .all .front .top-nav .search-bar i{
-    margin-left: -30px;
+    margin-left: -40px;
     cursor: pointer;
     color: black;
+    padding: 9px;
+    padding-bottom: 12px;
+    background-color: var(--lightgrey);
     /* position: relative; */
 }
 
 .all .front .top-nav .profile{
     margin-left: 10%;
     margin-top: 20px;
-    /* background-color: red; */
 }
 .all .front .top-nav .profile img{
     width: 40%;
@@ -149,6 +154,7 @@ body.active{
 .all .front .top-nav .ham{
     margin-left: 100px;
     margin-top: 30px;
+    position: relative;
 }
 .all .front .top-nav .ham img{
     float: left;
@@ -183,6 +189,129 @@ body.active{
 .all .front .top-nav .ham #bham.active{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all .front .sidebar{
+    display: none;
+    position: fixed;
+    margin-top: -141px;
+    height: 525px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--lightgrey);
+    margin-left: 76.1%;
+    padding-top: 100px;
+    padding-right: 40px;
+    padding-left: 10px;
+    animation: side 0.3s;
+    transition: all 0.3s ease-in-out;
+}
+.all .front .sidebar.active{
+    display: block;
+}
+.all .front .sidebar.highlight{
+    background-color: var(--dark-mode);
+}
+
+@keyframes side {
+
+    0%{
+        opacity: 0;
+        margin-left: 100%;
+    }
+    50%{
+        opacity: 0;
+        margin-left: 80%;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 76.1%;
+    }
+}
+
+
+
+.all .front .sidebar .ham{
+    margin-left: 35px;
+    margin-top: -86.5px;
+    position: relative;
+}
+.all .front .sidebar .ham img{
+    float: left;
+    margin-left: 10px;
+    width: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.all .front .sidebar .ham #sun2{
+    display: none;
+}
+.all .front .sidebar .ham #sun2.active{
+    display: block;
+}
+.all .front .sidebar .ham #moon2{
+    display: block;
+}
+.all .front .sidebar .ham #moon2.active{
+    display: none;
+}
+
+
+.all .front .sidebar .ham #wclose{
+    display: none;
+}
+.all .front .sidebar .ham #wclose.active{
+    display: block;
+}
+.all .front .sidebar .ham #bclose{
+    display: block;
+}
+.all .front .sidebar .ham #bclose.active{
+    display: none;
+}
+
+.all .front .sidebar ul{
+    list-style: none;
+    margin-top: 100px;
+}
+.all .front .sidebar ul #sul.active{
+    color: red;
+}
+.all .front .sidebar ul li{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.all .front .sidebar ul li a{
+    color: #000;
+}
+.all .front .sidebar ul li #lin.active,
+.all .front .sidebar ul li #lin2.active,
+.all .front .sidebar ul li #lin3.active{
+    color: #ffffff;
+}
+.all .front .sidebar ul li a img{
+    width: 25px;
+    margin-right: 5px;
+    transform: translateY(7px);
+}
+
+
+
+
 
 
 
@@ -228,13 +357,23 @@ body.active{
     color: var(--primarycolor);
 }
 .all .front .five-depo-coren div section{
-    background-color: var(--lightgrey);
+    background-color: var(--lightDark);
     margin-left: 130px;
     margin-top: -19px;
     width: 30%;
     height: 25px;
+    font-size: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
+.all .front .five-depo-coren div section p{
+    transform: translateY(5px);
+    margin-top: 1px;
+    color: var(--white);
+}
 
 .all .front .next-div1{
     padding-left: 15px;
@@ -313,14 +452,50 @@ body.active{
 
 @media (min-width: 200px){
 
+
+    .all .front .sidebar{
+        margin-top: -140px;
+        margin-left: -5%;
+        height: 100%;
+        width: 95%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .all .front .sidebar .ham{
+        margin-top: -70px;
+        margin-left: 40%;
+    }
+    .all .front .sidebar .ham img{
+        width: 30px;
+    }
+    .all .front .sidebar ul{
+        margin-left: 40%;
+    }
+    @keyframes side {
+
+        0%{
+            opacity: 0;
+            margin-top: -180px;
+        }
+        50%{
+            opacity: 1;
+            margin-top: -150px;
+        }
+        100%{
+            opacity: 1;
+            margin-top: -140px;
+        }
+    }
+
     .all{
         width: 100%;
         height: 2000px;
     }
 
-    .all .front .top-nav{
+    /* .all .front .top-nav{
         background-color: red;
-    }
+    } */
     .all .front .top-nav .greet{
         width: 50%;
     }
@@ -400,7 +575,7 @@ body.active{
     }
 
     .all .front .five-depo-coren div section{
-        background-color: var(--lightgrey);
+        background-color: var(--lightDark);
         margin-left: 50px;
         margin-top: 0px;
         width: 50%;
@@ -536,6 +711,18 @@ body.active{
 
 @media (min-width: 500px){
 
+
+    .all .front .sidebar{
+        /* display: block; */
+        margin-top: -140px;
+        margin-left: -2%;
+        height: 100%;
+        width: 90%;
+        /* background-color: red; */
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
     .all .front .five-depo-coren{
         margin-left: 2%;
     }
@@ -575,7 +762,7 @@ body.active{
         color: var(--primarycolor);
     }
     .all .front .five-depo-coren div section{
-        background-color: var(--lightgrey);
+        background-color: var(--lightDark);
         margin-left: 130px;
         margin-top: -19px;
         width: 30%;
@@ -786,7 +973,7 @@ body.active{
         margin-left: 0px;
     }
     .all .front .top-nav .search-bar i{
-        margin-left: -30px;
+        margin-left: -40px;
         cursor: pointer;
         /* position: relative; */
     }
@@ -829,6 +1016,14 @@ body.active{
         transition: all 0.3s ease-in-out;
     }
   
+    .all .front .sidebar{
+        margin-top: -140px;
+        margin-left: -2%;
+        height: 82%;
+        width: 90.5%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
     
     
     .all .front .five-depo-coren{
@@ -874,7 +1069,7 @@ body.active{
         color: var(--primarycolor);
     }
     .all .front .five-depo-coren div section{
-        background-color: var(--lightgrey);
+        background-color: var(--lightDark);
         margin-left: 70px;
         margin-top: 0px;
         width: 45%;
@@ -1038,6 +1233,14 @@ body.active{
         transform: none;
     }
 
+    .all .front .sidebar{
+        margin-top: -140px;
+        margin-left: -5%;
+        height: 100%;
+        width: 95%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
 
     .all .front .next-div1{
         padding-left: 15%;
@@ -1118,7 +1321,7 @@ body.active{
         color: var(--primarycolor);
     }
     .all .front .five-depo-coren div section{
-        background-color: var(--lightgrey);
+        background-color: var(--lightDark);
         margin-left: 130px;
         margin-top: -19px;
         width: 30%;

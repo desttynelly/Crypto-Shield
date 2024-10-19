@@ -2,6 +2,9 @@
 document.querySelector("#moon").addEventListener("click", function(){
     document.querySelector("#moon").classList.add("active");
     document.querySelector("#sun").classList.add("active");
+
+    document.querySelector("#bham").classList.add("active");
+    document.querySelector("#wham").classList.add("active");
     
     document.querySelector(".front").classList.add("active");
     document.querySelector(".top-nav").classList.add("active");
@@ -35,6 +38,9 @@ document.querySelector("#moon").addEventListener("click", function(){
 document.querySelector("#sun").addEventListener("click", function(){
     document.querySelector("#moon").classList.remove("active");
     document.querySelector("#sun").classList.remove("active");
+
+    document.querySelector("#bham").classList.remove("active");
+    document.querySelector("#wham").classList.remove("active");
     
     document.querySelector(".front").classList.remove("active");
     document.querySelector(".top-nav").classList.remove("active");

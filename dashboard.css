@@ -349,7 +349,7 @@ body.active{
         margin-left: 45px;
     }
     .all .front .top-nav .ham{
-        margin-top: -220px;
+        margin-top: -300px;
         margin-left: 60%;
         /* float: left; */
     }
@@ -432,7 +432,7 @@ body.active{
 @media (min-width: 250px){
 
     .all .front .top-nav .ham{
-        margin-top: -220px;
+        margin-top: -300px;
         margin-left: 60%;
     }
     .all .front .five-depo-coren{
@@ -443,7 +443,7 @@ body.active{
 @media (min-width: 315px){
 
     .all .front .top-nav .ham{
-        margin-top: -220px;
+        margin-top: -280px;
         margin-left: 70%;
     }
     .all .front .five-depo-coren{
@@ -456,7 +456,17 @@ body.active{
     .all .front .five-depo-coren{
         margin-left: 26%;
     }
+
 }
+
+@media (min-width: 357px){
+   .all .front .ham{
+        margin-top: 250px;
+        transform: translateY(30px);
+   }
+}
+
+
 
 @media (min-width: 360px){
 
@@ -505,8 +515,9 @@ body.active{
         transform: translateY(-120px);
     }
     .all .front .top-nav .ham{
-        margin-top: -190px;
+        margin-top: -250px;
         margin-left: 80%;
+        transform: none;
     }
     .all .front .top-nav .ham img{
         width: 25px;
@@ -579,7 +590,7 @@ body.active{
     .all .front .top-nav .profile{
         /* margin-left: -500px; */
         transform: translateY(-120px);
-        margin-left: 63%;
+        margin-left: 57%;
     }
     .all .front .top-nav .ham{
         margin-top: -185px;

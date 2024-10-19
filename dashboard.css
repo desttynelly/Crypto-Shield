@@ -370,8 +370,9 @@ body.active{
 }
 
 .all .front .five-depo-coren div section p{
-    transform: translateY(5px);
+    /* transform: translateY(5px); */
     margin-top: 1px;
+    padding-top: 5px;
     color: var(--white);
 }
 

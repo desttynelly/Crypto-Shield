@@ -123,6 +123,8 @@
     // Function to apply dark mode classes
     function applyDarkMode() {
 
+        
+
         document.querySelector("#moon").classList.add("active");
         document.querySelector("#sun").classList.add("active");
     

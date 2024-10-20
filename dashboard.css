@@ -394,6 +394,9 @@ body.active{
     padding-top: 10px;
     margin-right: 30px;
 }
+.all .front .next-div1 .chart .d-chart.highlight{
+    display: none;
+}
 .all .front .next-div1 .analysis #anp,
 .all .front .next-div1 .chart #chp,
 .all .front .next-div1 .rates #rap{

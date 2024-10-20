@@ -344,22 +344,26 @@ document.querySelector("#lin3").addEventListener("click", function(){
 
 document.querySelector("#bham").addEventListener("click", function(){
     document.querySelector(".sidebar").classList.add("active")
+    document.querySelector(".d-chart").classList.add("highlight")
 });
 
 
 document.querySelector("#wham").addEventListener("click", function(){
     document.querySelector(".sidebar").classList.add("active")
+    document.querySelector(".d-chart").classList.add("highlight")
 });
 
 
 
 document.querySelector("#bclose").addEventListener("click", function(){
     document.querySelector(".sidebar").classList.remove("active")
+    document.querySelector(".d-chart").classList.remove("highlight")
 });
 
 
 document.querySelector("#wclose").addEventListener("click", function(){
     document.querySelector(".sidebar").classList.remove("active")
+    document.querySelector(".d-chart").classList.remove("highlight")
 });
 
 

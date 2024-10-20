@@ -22,6 +22,12 @@ document.querySelector(".goo").addEventListener("click", function(){
     document.querySelector(".comm").classList.add("active")
 
     setTimeout(function(){
+        window.location = "dashboard.html"
         document.querySelector(".comm").classList.remove("active")
     }, 2000);
 })
+
+
+
+
+

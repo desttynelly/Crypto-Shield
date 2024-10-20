@@ -65,7 +65,7 @@ document.querySelector(".go3").addEventListener("click", function(e){
 
     setTimeout(function(){
         window.location = "dashboard.html"
-        document.querySelector(".comm").classList.remove("active")
+        // document.querySelector(".comm").classList.remove("active")
     }, 2000);
 })
 

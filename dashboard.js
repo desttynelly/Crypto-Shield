@@ -238,6 +238,7 @@
 
 
 
+    
 
 
 
@@ -331,6 +332,12 @@
 //     document.querySelector("#d-analysis").classList.remove("active");
 //     document.querySelector("#d-rates").classList.remove("active");
 // })
+
+document.querySelector("#lin3").addEventListener("click", function(){
+    // document.querySelector(".sidebar").classList.add("active")
+    window.location = "index.html"
+});
+
 
 
 document.querySelector("#bham").addEventListener("click", function(){

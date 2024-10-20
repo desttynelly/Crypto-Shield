@@ -354,6 +354,45 @@ document.querySelector("#wclose").addEventListener("click", function(){
 });
 
 
+
+document.querySelector(".btc").addEventListener("click", function(){
+    document.querySelector(".popup").classList.add("active")
+    // window.alert("jjjjj")
+})
+
+document.querySelector(".eth").addEventListener("click", function(){
+    document.querySelector(".popup").classList.add("active")
+    // window.alert("jjjjj")
+})
+
+document.querySelector(".usdt1").addEventListener("click", function(){
+    document.querySelector(".popup").classList.add("active")
+    // window.alert("jjjjj")
+})
+
+document.querySelector(".usdt2").addEventListener("click", function(){
+    document.querySelector(".popup").classList.add("active")
+    // window.alert("jjjjj")
+})
+
+document.querySelector(".bnb").addEventListener("click", function(){
+    document.querySelector(".popup").classList.add("active")
+    // window.alert("jjjjj")
+})
+
+
+
+document.querySelector(".clo").addEventListener("click", function(){
+    document.querySelector(".popup").classList.remove("active")
+    document.querySelector(".clo").classList.add("active")
+
+    setTimeout(() => {
+    document.querySelector(".clo").classList.remove("active")  
+    }, 100);
+    // window.alert("jjjjj")
+})
+
+
 // document.querySelector(".all").addEventListener("click", function(){
 //     document.querySelector(".sidebar").classList.toggle("active")
 // });

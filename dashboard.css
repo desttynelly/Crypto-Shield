@@ -10,6 +10,7 @@
     --darkText:#8388B4;
     --shadow: 1px 1px 50px -25px;
     --dark-mode: #0c0e25;
+    --overlay: #0000006c;
  }
  
  
@@ -322,6 +323,7 @@ body.active{
     margin-bottom: 230px;
 }
 .all .front .five-depo-coren div{
+    cursor: pointer;
     float: left;
     width: 200px;
     margin-bottom: 10px;
@@ -445,6 +447,107 @@ body.active{
 
 
 
+/* Poppup */
+
+    .popup{
+        position: fixed;
+        width: 120%;
+        height: 115%;
+        margin-left: -70px;
+        padding-left: 200px;
+        background-color: var(--overlay);
+        margin-top: -600px;
+        display: none;
+        animation: fade 0.3s;
+    }
+    .popup.active{
+        display: block;
+    }
+
+    @keyframes fade {
+
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .popup .d-pop1{
+        margin-top: 10%;
+        margin-left: 20%;
+        width: 40%;
+        height: 300px;
+        color: var(--black);
+        border-radius: 10px;
+        background-color: var(--white);
+    }
+    .popup .d-pop1 .clo{
+        margin-left: 90%;
+        width: 7%;
+        background-color: var(--overlay);
+        /* border-radius: 50px; */
+        cursor: pointer;
+    }
+    .popup .d-pop1 .clo.active{
+        background-color: red;
+    }
+    .popup .d-pop1 .clo p{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup .d-pop1 .head{
+        margin-left: 40%;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .popup .d-pop1 label{
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .popup .d-pop1 input{
+        margin-left: 10%;
+        width: 75%;
+        padding-left: 10px;
+        height: 40px;
+        outline: none;
+    }
+    .popup .d-pop1 select{
+        font-family: "poppins",sans-serif;
+        margin-left: 10%;
+        width: 75%;
+        height: 40px;
+        outline: none;
+    }
+    .popup .d-pop1 .btn{
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    .popup .d-pop1 .btn button{
+        width: 50%;
+        height: 40px;
+        font-family: "poppins", sans-serif;
+        color: var(--white);
+        background-color: var(--lightDark);
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+
+/* Poppup */
+
+
+
+
+
 
 
 
@@ -452,6 +555,47 @@ body.active{
 
 
 @media (min-width: 200px){
+
+
+    .popup{
+        position: fixed;
+        width: 100%;
+        /* height: 115%; */
+        margin-left: 0px;
+        padding-left: 5px;
+        background-color: var(--overlay);
+        margin-top: -1800px;
+    }
+
+    .popup .d-pop1{
+        margin-top: 100px;
+        margin-left: -5px;
+        width: 92%;
+        height: 300px;
+        color: var(--black);
+        border-radius: 10px;
+        background-color: var(--white);
+    }
+    .popup .d-pop1 .clo{
+        margin-left: 80%;
+        width: 12%;
+        background-color: var(--overlay);
+        /* border-radius: 50px; */
+    }
+    .popup .d-pop1 .head{
+        margin-left: 20%;
+        font-size: 30px;
+        font-weight: 600;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .popup .d-pop1 label,
+    .popup .d-pop1 input,
+    .popup .d-pop1 select{
+        margin-left: 11%;
+    }
+
+
 
 
     .all .front .sidebar{
@@ -1025,6 +1169,86 @@ body.active{
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
+
+
+
+
+    .popup{
+        position: fixed;
+        width: 120%;
+        height: 115%;
+        margin-left: -70px;
+        padding-left: 200px;
+        background-color: var(--overlay);
+        margin-top: -600px;
+    }
+
+    .popup .d-pop1{
+        margin-top: 10%;
+        margin-left: 20%;
+        width: 40%;
+        height: 300px;
+        color: var(--black);
+        border-radius: 10px;
+        background-color: var(--white);
+    }
+    .popup .d-pop1 .clo{
+        margin-left: 90%;
+        width: 7%;
+        background-color: var(--overlay);
+        /* border-radius: 50px; */
+    }
+    .popup .d-pop1 .clo p{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup .d-pop1 .head{
+        margin-left: 40%;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .popup .d-pop1 label{
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .popup .d-pop1 input{
+        margin-left: 10%;
+        width: 75%;
+        padding-left: 10px;
+        height: 40px;
+        outline: none;
+    }
+    .popup .d-pop1 select{
+        font-family: "poppins",sans-serif;
+        margin-left: 10%;
+        width: 75%;
+        height: 40px;
+        outline: none;
+    }
+    .popup .d-pop1 .btn{
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    .popup .d-pop1 .btn button{
+        width: 50%;
+        height: 40px;
+        font-family: "poppins", sans-serif;
+        color: var(--white);
+        background-color: var(--lightDark);
+        border: none;
+    }
+
+
+
+
+/* Poppup */
+
+
+
+
+
     
     
     .all .front .five-depo-coren{

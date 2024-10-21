@@ -131,6 +131,19 @@
         document.querySelector("#moon2").classList.add("active");
         document.querySelector("#sun2").classList.add("active");
     
+        document.querySelector("#depo").classList.add("active");
+
+        document.querySelector(".d-pop1").classList.add("active");
+
+
+
+        document.querySelector(".cancel").classList.add("active");
+
+        document.querySelector(".gout").classList.add("active");
+
+        document.querySelector(".d-logp").classList.add("active");
+
+
         document.querySelector("#bclose").classList.add("active");
         document.querySelector("#wclose").classList.add("active");
     
@@ -171,6 +184,18 @@
     
         document.querySelector("#bclose").classList.remove("active");
         document.querySelector("#wclose").classList.remove("active");
+
+        document.querySelector("#depo").classList.remove("active");
+
+        document.querySelector(".d-pop1").classList.remove("active");
+
+
+
+        document.querySelector(".cancel").classList.add("active");
+
+        document.querySelector(".gout").classList.add("active");
+
+        document.querySelector(".d-logp").classList.add("active");
     
     
         document.querySelector("#lin").classList.remove("active");
@@ -242,6 +267,25 @@
 
     
 
+    async function fetchCryptoData() {
+        const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,litecoin');
+        const data = await response.json();
+    
+        const tableBody = document.getElementById('crypto-table');
+        tableBody.innerHTML = data.map(coin => `
+          <tr>
+            <td>${coin.name}</td>
+            <td>${coin.current_price}</td>
+            <td>${coin.price_change_percentage_1h_in_currency || 'N/A'}</td>
+            <td>${coin.market_cap}</td>
+            <td>${coin.price_change_percentage_1h_in_currency}%</td>
+            <td>${coin.price_change_percentage_24h}%</td>
+            <td>${coin.price_change_percentage_7d}%</td>
+          </tr>
+        `).join('');
+      }
+    
+      fetchCryptoData();
 
 
 
@@ -336,11 +380,19 @@
 // })
 
 document.querySelector("#lin3").addEventListener("click", function(){
-    // document.querySelector(".sidebar").classList.add("active")
-    window.location = "index.html"
+    document.querySelector(".logpop").classList.add("active")
+    // window.location = "index.html"
 });
 
+document.querySelector(".cancel").addEventListener("click", function(){
+    document.querySelector(".logpop").classList.remove("active")
+    // window.location = "index.html"
+});
 
+document.querySelector(".gout").addEventListener("click", function(){
+    // document.querySelector(".logpop").classList.remove("active")
+    window.location = "index.html"
+});
 
 document.querySelector("#bham").addEventListener("click", function(){
     document.querySelector(".sidebar").classList.add("active")

@@ -535,6 +535,10 @@ body.active{
         border-radius: 10px;
         background-color: var(--white);
     }
+    .popup .d-pop1.active{
+        color: var(--white);
+        background-color: var(--dark-mode);
+    }
     .popup .d-pop1 .clo{
         margin-left: 90%;
         width: 7%;
@@ -578,14 +582,18 @@ body.active{
         margin-left: 30%;
         margin-top: 10px;
     }
-    .popup .d-pop1 .btn button{
+    .popup .d-pop1 .btn #depo{
         width: 50%;
         height: 40px;
         font-family: "poppins", sans-serif;
         color: var(--white);
-        background-color: var(--lightDark);
+        background-color: var(--darkblue);
         border: none;
         cursor: pointer;
+    }
+    .popup .d-pop1 .btn #depo.active{
+        background-color: var(--lightgrey);
+        color: var(--black);
     }
 
 
@@ -594,6 +602,70 @@ body.active{
 /* Poppup */
 
 
+
+
+
+
+/* Logpop */
+
+    .logpop{
+        width: 100%;
+        height: 800px;
+        background-color: var(--overlay);
+        position: fixed;
+        margin-left: -95px;
+        margin-top: -240px;
+        display: none;
+        animation: fade 0.3s;
+    }
+    .logpop.active{
+        display: block;
+    }
+    .logpop .d-logp{
+        height: 200px;
+        margin-top: 200px;
+        margin-left: 35%;
+        background-color: var(--lightgrey);
+        color: var(--black);
+        width: 30%;
+        padding-top: 30px;
+    }
+    .logpop .d-logp.active{
+        background-color: var(--dark-mode);
+        color: var(--white);
+    }
+    .logpop .d-logp .head{
+        font-size: 30px;
+        margin-left: 38%;
+    }
+    .logpop .d-logp .quest{
+        margin-left: 19%;
+        margin-top: 20px;
+    }
+    .logpop .d-logp .two-btns{
+        margin-left: 24%;
+        /* background-color: red; */
+        width: 60%;
+        margin-top: 15px;
+    }
+    .logpop .d-logp .two-btns button{
+        width: 45%;
+        height: 40px;
+        background-color: var(--darkblue);
+        border: none;
+        font-family: "poppins", sans-serif;
+        color: var(--white);
+        cursor: pointer;
+    }
+    .logpop .d-logp .two-btns .cancel.active,
+    .logpop .d-logp .two-btns .gout.active{
+        background-color: var(--lightgrey);
+        color: var(--black);
+    }
+
+
+
+/* Logpop */
 
 
 
@@ -642,6 +714,29 @@ body.active{
     .popup .d-pop1 input,
     .popup .d-pop1 select{
         margin-left: 11%;
+    }
+
+
+    .logpop{
+        margin-left: -6%;
+        height: 1000px;
+    }
+    .logpop .d-logp{
+        height: 250px;
+        margin-top: 250px;
+        margin-left: 7%;
+        width: 85%;
+    }
+    .logpop .d-logp .head{
+        margin-left: 20%;
+    }
+    .logpop .d-logp .quest{
+        margin-left: 9%;
+    }
+    .logpop .d-logp .two-btns{
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 15px;
     }
 
 
@@ -798,6 +893,29 @@ body.active{
     }
 }
 
+
+/* @media (min-width: 200px) and (min-height: 100px){
+
+    
+
+    .logpop .d-logp{
+        margin-top: -200px;
+        transform: translateY(-100px);
+    }
+}
+
+
+
+
+@media (min-width: 200px) and (min-height: 600px){
+
+    
+
+    .logpop .d-logp{
+        margin-top: 200px;
+    }
+} */
+
 @media (min-width: 250px){
 
     .all .front .top-nav .ham{
@@ -817,6 +935,26 @@ body.active{
     }
     .all .front .five-depo-coren{
         margin-left: 23%;
+    }
+    .logpop{
+        margin-left: -6%;
+    }
+    .logpop .d-logp{
+        height: 250px;
+        margin-top: 250px;
+        margin-left: 7%;
+        width: 85%;
+    }
+    .logpop .d-logp .head{
+        margin-left: 35%;
+    }
+    .logpop .d-logp .quest{
+        margin-left: 13%;
+    }
+    .logpop .d-logp .two-btns{
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 15px;
     }
 }
 
@@ -944,6 +1082,26 @@ body.active{
         margin-left: 11%;
     }
 
+    .logpop{
+        margin-left: -7%;
+    }
+    .logpop .d-logp{
+        height: 250px;
+        margin-top: 250px;
+        margin-left: 17%;
+        width: 65%;
+    }
+    .logpop .d-logp .head{
+        margin-left: 35%;
+    }
+    .logpop .d-logp .quest{
+        margin-left: 12%;
+    }
+    .logpop .d-logp .two-btns{
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 15px;
+    }
 
     .all .front .sidebar{
         /* display: block; */
@@ -1164,6 +1322,29 @@ body.active{
         margin-left: 11%;
     }
 
+
+    .logpop{
+        margin-left: -7%;
+        height: 100%;
+    }
+    .logpop .d-logp{
+        height: 250px;
+        margin-top: 250px;
+        margin-left: 24%;
+        width: 50%;
+    }
+    .logpop .d-logp .head{
+        margin-left: 35%;
+    }
+    .logpop .d-logp .quest{
+        margin-left: 12%;
+    }
+    .logpop .d-logp .two-btns{
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 15px;
+    }
+
     .all .front .five-depo-coren{
         margin-left: 5%;
     }
@@ -1356,12 +1537,12 @@ body.active{
         margin-left: 30%;
         margin-top: 10px;
     }
-    .popup .d-pop1 .btn button{
+    .popup .d-pop1 .btn #depo{
         width: 50%;
         height: 40px;
         font-family: "poppins", sans-serif;
         color: var(--white);
-        background-color: var(--lightDark);
+        background-color: var(--darkblue);
         border: none;
     }
 
@@ -1371,6 +1552,70 @@ body.active{
 /* Poppup */
 
 
+
+
+
+/* Logpop */
+
+.logpop{
+    width: 100%;
+    height: 800px;
+    background-color: var(--overlay);
+    position: fixed;
+    margin-left: -95px;
+    margin-top: -240px;
+    display: none;
+    animation: fade 0.3s;
+}
+.logpop.active{
+    display: block;
+}
+.logpop .d-logp{
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 35%;
+    background-color: var(--lightgrey);
+    color: var(--black);
+    width: 30%;
+    padding-top: 30px;
+}
+.logpop .d-logp.active{
+    background-color: var(--dark-mode);
+    color: var(--white);
+}
+.logpop .d-logp .head{
+    font-size: 30px;
+    margin-left: 34%;
+}
+.logpop .d-logp .quest{
+    margin-left: 9%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.logpop .d-logp .two-btns{
+    margin-left: 24%;
+    /* background-color: red; */
+    width: 60%;
+    margin-top: 15px;
+}
+.logpop .d-logp .two-btns button{
+    width: 45%;
+    height: 40px;
+    background-color: var(--darkblue);
+    border: none;
+    font-family: "poppins", sans-serif;
+    color: var(--white);
+    cursor: pointer;
+}
+.logpop .d-logp .two-btns .cancel.active,
+.logpop .d-logp .two-btns .gout.active{
+    background-color: var(--lightgrey);
+    color: var(--black);
+}
+
+
+
+/* Logpop */
 
 
 
@@ -1614,6 +1859,14 @@ body.active{
         margin-right: 30px;
         margin-bottom: 20px;
     }
+
+    .logpop{
+        margin-left: -7%;
+        height: 120%;
+    }
+    .logpop .d-logp{
+        margin-top: 550px;
+    }
 }
 
 
@@ -1622,6 +1875,70 @@ body.active{
 
 
 @media (min-width: 1200px){
+
+
+    /* Logpop */
+
+.logpop{
+    width: 100%;
+    height: 800px;
+    background-color: var(--overlay);
+    position: fixed;
+    margin-left: -95px;
+    margin-top: -240px;
+    display: none;
+    animation: fade 0.3s;
+}
+.logpop.active{
+    display: block;
+}
+.logpop .d-logp{
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 35%;
+    background-color: var(--lightgrey);
+    color: var(--black);
+    width: 30%;
+    padding-top: 30px;
+}
+.logpop .d-logp.active{
+    background-color: var(--dark-mode);
+    color: var(--white);
+}
+.logpop .d-logp .head{
+    font-size: 30px;
+    margin-left: 38%;
+}
+.logpop .d-logp .quest{
+    margin-left: 19%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.logpop .d-logp .two-btns{
+    margin-left: 24%;
+    /* background-color: red; */
+    width: 60%;
+    margin-top: 15px;
+}
+.logpop .d-logp .two-btns button{
+    width: 45%;
+    height: 40px;
+    background-color: var(--darkblue);
+    border: none;
+    font-family: "poppins", sans-serif;
+    color: var(--white);
+    cursor: pointer;
+}
+.logpop .d-logp .two-btns .cancel.active,
+.logpop .d-logp .two-btns .gout.active{
+    background-color: var(--lightgrey);
+    color: var(--black);
+}
+
+
+
+/* Logpop */
+
 
     .all .front .top-nav .search-bar{
         margin-left: -22%;

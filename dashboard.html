@@ -75,6 +75,21 @@
                 </ul>
             </div>
 
+            <div class="logpop">
+
+                <div class="d-logp">
+                <p class="head">Logout</p>
+
+                <p class="quest">Are you sure you want to log out?</p>
+
+                <div class="two-btns">
+                    <button class="cancel">Cancel</button>
+                    <button class="gout">Logout</button>
+                </div>
+
+            </div>
+            </div>
+
 
             <div data-aos="fade-up" class="five-depo-coren">
                 <div class="btc">
@@ -234,27 +249,6 @@
 
 
 
-<script>
-    async function fetchCryptoData() {
-      const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,litecoin');
-      const data = await response.json();
-  
-      const tableBody = document.getElementById('crypto-table');
-      tableBody.innerHTML = data.map(coin => `
-        <tr>
-          <td>${coin.name}</td>
-          <td>${coin.current_price}</td>
-          <td>${coin.price_change_percentage_1h_in_currency || 'N/A'}</td>
-          <td>${coin.market_cap}</td>
-          <td>${coin.price_change_percentage_1h_in_currency}%</td>
-          <td>${coin.price_change_percentage_24h}%</td>
-          <td>${coin.price_change_percentage_7d}%</td>
-        </tr>
-      `).join('');
-    }
-  
-    fetchCryptoData();
-  </script>
 
 
 

@@ -178,6 +178,22 @@
                     <p id="rap">Market Rates</p>
 
                     <section id="d-rates">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Amount</th>
+                                <th>AVG</th>
+                                <th>Value</th>
+                                <th>1h</th>
+                                <th>24h</th>
+                                <th>1m</th>
+                              </tr>
+                            </thead>
+                            <tbody id="crypto-table">
+                              <!-- Data will be populated here -->
+                            </tbody>
+                          </table>
 
                     </section>
                 </div>
@@ -216,7 +232,27 @@
 
 
 
-
+<script>
+    async function fetchCryptoData() {
+      const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,litecoin');
+      const data = await response.json();
+  
+      const tableBody = document.getElementById('crypto-table');
+      tableBody.innerHTML = data.map(coin => `
+        <tr>
+          <td>${coin.name}</td>
+          <td>${coin.current_price}</td>
+          <td>${coin.price_change_percentage_1h_in_currency || 'N/A'}</td>
+          <td>${coin.market_cap}</td>
+          <td>${coin.price_change_percentage_1h_in_currency}%</td>
+          <td>${coin.price_change_percentage_24h}%</td>
+          <td>${coin.price_change_percentage_7d}%</td>
+        </tr>
+      `).join('');
+    }
+  
+    fetchCryptoData();
+  </script>
 
 
 

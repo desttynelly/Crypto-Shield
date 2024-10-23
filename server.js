@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_CONNECTION).then(()=>{console.log("Database
 // middle ware
 app.set('view engine', 'ejs');
 app.use (express.static(path.join(__dirname, "assets")));//host  express static files
-
+app.set("views", path.join(__dirname, 'views'))
 // const app = express();
 // app.use(express.static(__dirname))
 

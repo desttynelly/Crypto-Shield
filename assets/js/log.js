@@ -11,6 +11,11 @@ bar.onclick = (e) => {
     document.querySelector(".nav-l").classList.toggle("active")
 }
 
+
+
+
+
+
 document.querySelector(".goo").addEventListener("click", function(){
 
     // document.querySelector(".name").classList.add("active")
@@ -19,13 +24,13 @@ document.querySelector(".goo").addEventListener("click", function(){
 
     // window.alert("Signing up............ please wait")
 
-    document.querySelector(".comm").classList.add("active")
+    // document.querySelector(".comm").classList.add("active")
 
-    window.location = "dashboard"
-    setTimeout(function(){
+    // window.location = "dashboard"
+    // setTimeout(function(){
         
-        document.querySelector(".comm").classList.remove("active")
-    }, 5000);
+    //     document.querySelector(".comm").classList.remove("active")
+    // }, 5000);
 })
 
 

@@ -316,6 +316,7 @@ body.active{
 
 
 
+
 .all .front .five-depo-coren{
     /* background-color: red; */
     width: 95%;
@@ -377,6 +378,72 @@ body.active{
     padding-top: 5px;
     color: var(--white);
 }
+
+
+.all .front .in-d-mid{
+    height: 100px;
+    width: 100%;
+    margin-left: 2%;
+}
+.all .front .in-d-mid div{
+    float: left;
+    margin-left: 10px;
+    width: 30%;
+    background-color: var(--white);
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.all .front .in-d-mid div .head{
+    font-weight: 500;
+    font-size: 20px;
+}
+.all .front .in-d-mid div .refered-bal{
+    font-size: 40px;
+    margin-top: -50px;
+}
+.all .front .in-d-mid div .add-p{
+    margin-left: 70%;
+    margin-top: 20px;
+    width: 28%;
+    font-family: "poppins", sans-serif;
+    background-color: var(--darkblue);
+    color: var(--white);
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.all .front .in-d-mid div #refer-id,
+.all .front .in-d-mid div #wall-add{
+    font-size: 17px;
+    color: var(--primarycolor);
+    overflow: hidden;
+    width: 90%;
+    height: 25px;
+}
+.all .front .in-d-mid div .copied{
+    width: 10%;
+    height: 30px;
+    background-color: var(--darkblue);
+    border-radius: 5px;
+    margin-left: 80%;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+}
+.all .front .in-d-mid div .copied i{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+
+
 
 .all .front .next-div1{
     padding-left: 15px;
@@ -979,6 +1046,8 @@ body.active{
 
     .all .front .five-depo-coren{
         margin-left: 3%;
+        height: 250px;
+        margin-bottom: 180px;
     }
     .all .front .five-depo-coren div{
         float: left;
@@ -1116,6 +1185,7 @@ body.active{
 
     .all .front .five-depo-coren{
         margin-left: 2%;
+        margin-bottom: 150px;
     }
     .all .front .five-depo-coren div{
         float: left;
@@ -1173,6 +1243,9 @@ body.active{
     .all .front .top-nav .ham{
         margin-top: -185px;
         margin-left: 82%;
+    }
+    .all .front .five-depo-coren{
+        margin-bottom: 100px;
     }
 }
 
@@ -1276,6 +1349,7 @@ body.active{
 @media (min-width: 761px){
     .all .front .five-depo-coren{
         margin-left: 2%;
+        margin-bottom: 20px;
     }
 }
 
@@ -1374,7 +1448,7 @@ body.active{
     .all{
         padding-left: 5%;
         padding-top: 5%;
-        height: 650px;
+        height: 800px;
     }
     .all .front{
         border-radius: 20px;
@@ -1623,9 +1697,10 @@ body.active{
     
     .all .front .five-depo-coren{
         /* background-color: red; */
+        height: 80px;
         width: 100%;
         margin-left: 0%;
-        margin-bottom: 220px;
+        margin-bottom: 30px;
     }
     .all .front .five-depo-coren div{
         float: left;
@@ -1674,6 +1749,7 @@ body.active{
     
     .all .front .next-div1{
         margin-top: 0px;
+        padding-top: 0px;
         padding-left: 15px;
     }
     .all .front .next-div1 div{
@@ -1748,7 +1824,7 @@ body.active{
         /* background-color: red; */
         width: 95%;
         margin-left: 2%;
-        margin-bottom: 220px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1760,7 +1836,8 @@ body.active{
         margin-left: 7%;
     }
     .all .front .next-div1{
-        margin-top: 200px;
+        margin-top: 0px;
+        padding-top: 0px;
         padding-left: 15px;
     }
     .all .front .next-div1 div{
@@ -1949,7 +2026,7 @@ body.active{
         /* background-color: red; */
         width: 95%;
         margin-left: 20px;
-        margin-bottom: 230px;
+        margin-bottom: 30px;
     }
 
     .all .front .five-depo-coren div{
@@ -2051,7 +2128,7 @@ body.active{
 
 
     .all .front .next-div1{
-        margin-top: 200px;
+        margin-top: 30px;
         padding-left: 15px;
     }
     .all .front .next-div1 div{

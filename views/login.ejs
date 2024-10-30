@@ -53,17 +53,19 @@
     <div class="signup" id="login">
     
         <div class="name">
+            <form action="http://localhost:3500/api/auth/register" method="post">
             <p class="head">Login</p>
             <p>Input Login Details</p>
 
             <label for="Username">Username</label> <br>
-            <input type="text" name="Username" id="Username" placeholder="Brian224">  <br><br>
+            <input type="text" name="fullname" id="Username" placeholder="Brian224" required>  <br><br>
 
             <label for="Password">Password</label> <br>
-            <input type="password" name="Password" id="Password" placeholder="************" accesskey="rat">  <br><br>
+            <input type="password" name="Password" id="Password" placeholder="************" accesskey="rat" required>  <br><br>
 
             <button  class="goo">Login</button>
 
+        </form>
         </div>
 
 

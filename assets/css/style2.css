@@ -334,6 +334,7 @@ a{
     width: 400px;
     margin-top: 100px;
     margin-left: 500px;
+    height: 1000px;
 }
 @keyframes gb1{
 
@@ -378,6 +379,17 @@ a{
     animation: come3 0.5s 1;
     font-family: "poppins", sans-serif;
 }
+.signup select{
+    width: 445px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 13px;
+    border: none;
+    animation: come3 0.5s 1;
+    font-family: "poppins", sans-serif;
+}
 
 @keyframes come3{
 
@@ -412,7 +424,8 @@ a{
     }
 }
 
-.signup button{
+.signup button,
+.signup section{
     font-family: "poppins", sans-serif;
     width: 315px;
     height: 40px;
@@ -462,10 +475,10 @@ a{
     display: none;
 }
 
-.signup .email{
+.signup .Phone{
     display: none;
 }
-.signup .email.active{
+.signup .Phone.active{
     display: block;
 }
 
@@ -533,9 +546,7 @@ a{
 
 
 @media (min-width: 200px){ 
-.all{
 
-}
 .all nav{
     margin-left: 0px;
 }
@@ -651,6 +662,9 @@ a{
     font-size: 10px;
     border: none;
     animation: come3 0.5s 1;
+}
+.signup select{
+    width: 180px;
 }
 .signup .backimg{
     position: fixed;
@@ -789,6 +803,9 @@ a{
 
     .signup input{
         width: 220px;
+    }
+    .signup select{
+        width: 245px;
     }
 
     .signup button{
@@ -933,6 +950,10 @@ a{
     .signup input{
         width: 280px;
     }
+    .signup select{
+        width: 305px;
+    }
+
     .signup button{
         width: 295px;
     }
@@ -1037,6 +1058,9 @@ a{
     .signup input{
         width: 340px;
     }
+    .signup select{
+        width: 365px;
+    }
     .signup button{
         width: 355px;
         height: 40px;
@@ -1111,6 +1135,9 @@ a{
 
     .signup input{
         width: 375px;
+    }
+    .signup select{
+        width: 400px;
     }
     .signup button{
         width: 390px;
@@ -1247,9 +1274,9 @@ a{
     .signup .head{
         margin-left: 200px;
     }
-    #login .head{
-        /* width: 150px; */
-    }
+    /* #login .head{
+        /* width: 150px; 
+    } */
     .signup p{
         width: 250px;
     }
@@ -1259,6 +1286,9 @@ a{
     }
     .signup input{
         width: 430px;
+    }
+    .signup select{
+        width: 445px;
     }
     .signup button{
         width: 445px;

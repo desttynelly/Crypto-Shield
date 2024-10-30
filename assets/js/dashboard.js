@@ -391,7 +391,7 @@ document.querySelector(".cancel").addEventListener("click", function(){
 
 document.querySelector(".gout").addEventListener("click", function(){
     // document.querySelector(".logpop").classList.remove("active")
-    window.location = "index.html"
+    window.location = "/"
 });
 
 document.querySelector("#bham").addEventListener("click", function(){

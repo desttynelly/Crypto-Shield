@@ -33,7 +33,10 @@ header{
     align-items: center;
     padding: 2em 1em;
 }
-
+header .log{
+    font-size: 30px;
+    font-weight: 600;
+}
 #barContainer{
     position: relative;
     color: var(--white);

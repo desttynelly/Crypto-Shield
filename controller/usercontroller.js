@@ -151,7 +151,7 @@ const signUp = async (req, res) => {
                 
                 // Add other fields as needed
             };
-            res.render("dashboard")
+            res.render("dashboard", {user: req.session.user})
             // res.status(200).json({
             //     status: "Success",
             //     message: "Login successful",

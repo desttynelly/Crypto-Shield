@@ -31,7 +31,7 @@ const authenticate = (req, res, next) => {
 router.get("/dashboard", (req, res)=>{
     res.render('dashboard')
 })
-router.post('/register', signUp)
+router.post('/dashboard', signUp)
 router.post('/login', logIn)
 
 module.exports = router

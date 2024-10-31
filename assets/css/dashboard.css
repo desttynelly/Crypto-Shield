@@ -872,6 +872,7 @@ body.active{
     .all .front .top-nav .profile img{
         width: 40px;
         height: 40px;
+        display: none;
     }
     .all .front .top-nav .profile #profile-name{
         margin-left: 45px;

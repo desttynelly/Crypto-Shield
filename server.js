@@ -55,7 +55,7 @@ app.get('/login',(req,res)=>{
 });
 
 app.get('/dashboard',(req,res)=>{
-    res.render('dashboard')
+    res.render('dashboard', {user: req.session.user})
 });
 
 app.listen(port,()=>{

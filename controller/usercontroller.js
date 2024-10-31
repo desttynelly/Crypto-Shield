@@ -50,25 +50,26 @@ const logIn = async(req, res)=>{
                 };
 
                 // Send success response
-                res.status(200).json({
-                    status: "Success",
-                    message: "Login successful",
-                    user: {
-                        id: user._id,
-                        email: user.email,
-                        fullname: user.fullname,
-                        phoneNumber: user.phoneNumber,
-                        country: user.country,
-                        accountNumber: user.accountNumber,
-                        accountBank: user.accountBank,
-                        notificationsCount: user.notificationsCount,
-                        referralCount:user.referralCount,
-                        referredUsers: user.referredUsers,
-                        points:user.points,
-                        accountName:user.accountName
+                res.render("dashboard", {user: req.session.user})
+                // res.status(200).json({
+                //     status: "Success",
+                //     message: "Login successful",
+                //     user: {
+                //         id: user._id,
+                //         email: user.email,
+                //         fullname: user.fullname,
+                //         phoneNumber: user.phoneNumber,
+                //         country: user.country,
+                //         accountNumber: user.accountNumber,
+                //         accountBank: user.accountBank,
+                //         notificationsCount: user.notificationsCount,
+                //         referralCount:user.referralCount,
+                //         referredUsers: user.referredUsers,
+                //         points:user.points,
+                //         accountName:user.accountName
 
-                    }
-                });
+                //     }
+                // });
         
                 // Redirect to the dashboard
                 // res.redirect('/dashboard');

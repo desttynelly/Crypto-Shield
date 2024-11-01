@@ -19,7 +19,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: red;
+    background-color: var(--darkblue);
     color: var(--white);
 }
 

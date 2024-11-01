@@ -851,9 +851,9 @@ body.active{
 
 
 
-    /* .all .front .top-nav{
-        background-color: red;
-    } */
+    .all .front{
+        display: none;
+    }
     .all .front .top-nav .greet{
         width: 50%;
     }

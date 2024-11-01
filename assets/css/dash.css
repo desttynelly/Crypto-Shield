@@ -19,7 +19,7 @@
     height: 2500px;
  }
 
- .all .front{
+ .all .front.active{
     background-color: var(--dark-mode);
     overflow-y: hidden;
  }

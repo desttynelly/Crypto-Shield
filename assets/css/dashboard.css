@@ -23,7 +23,7 @@ body.active{
 
 
     .all .front.active{
-        background-color: var(--dark-mode);
+        background-color: red;
     }
     .all .front .top-nav.active{
         color: var(--white);

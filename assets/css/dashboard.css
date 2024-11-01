@@ -918,6 +918,9 @@ body.active{
     .all .front .top-nav .profile #class{
         margin-left: 45px;
     }
+    .all .front .top-nav .profile #class img{
+        opacity: 1;
+    }
     .all .front .top-nav .ham{
         margin-top: -300px;
         margin-left: 60%;

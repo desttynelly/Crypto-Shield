@@ -850,42 +850,6 @@ body.active{
     }
 
 
-    .all .front .in-d-mid{
-        height: 300px;
-        width: 100%;
-        margin-left: -5px;
-    }
-    .all .front .in-d-mid div{
-        float: left;
-        margin-bottom: 10px;
-        width: 90%;
-        background-color: var(--white);
-        height: 60%;
-        padding-top: 10px;
-        padding-left: 10px;
-        border-radius: 10px;
-    }
-    .all .front .in-d-mid div .refered-bal{
-        font-size: 22px;
-        margin-top: -80px;
-    }
-    .all .front .in-d-mid div .add-p{
-        margin-top: 60px;
-        width: 65%;
-        margin-left: 30%;
-        opacity: 0;
-    }
-    
-    .all .front .in-d-mid div #refer-id,
-    .all .front .in-d-mid div #wall-add{
-        width: 90%;
-        height: none;
-    }
-    .all .front .in-d-mid div .copied{
-        margin-top: 30px;
-        width: 50px;
-        margin-left: 60%;
-    }
 
     /* .all .front .top-nav{
         background-color: red;
@@ -926,6 +890,8 @@ body.active{
         margin-left: 60%;
         /* float: left; */
     }
+
+
 
     .all .front .five-depo-coren{
         margin-left: 5%;
@@ -978,6 +944,43 @@ body.active{
         margin-top: 0px;
         width: 50%;
         height: 25px;
+    }
+
+    .all .front .in-d-mid{
+        height: 300px;
+        width: 100%;
+        margin-left: -5px;
+    }
+    .all .front .in-d-mid div{
+        float: left;
+        margin-bottom: 10px;
+        width: 90%;
+        background-color: var(--white);
+        height: 60%;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+    .all .front .in-d-mid div .refered-bal{
+        font-size: 22px;
+        margin-top: -80px;
+    }
+    .all .front .in-d-mid div .add-p{
+        margin-top: 60px;
+        width: 65%;
+        margin-left: 30%;
+        opacity: 0;
+    }
+    
+    .all .front .in-d-mid div #refer-id,
+    .all .front .in-d-mid div #wall-add{
+        width: 90%;
+        height: none;
+    }
+    .all .front .in-d-mid div .copied{
+        margin-top: 30px;
+        width: 50px;
+        margin-left: 60%;
     }
 
     .all .front .next-div1{

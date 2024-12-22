@@ -108,7 +108,7 @@ const signUp = async (req, res) => {
            imageURL = result.secure_url;
 
         
-        
+             
            createuser()
 
           });
